@@ -149,31 +149,6 @@
       padding: 80px 0 64px;
     }
 
-    .section-head {
-      display: flex;
-      align-items: baseline;
-      gap: 24px;
-      margin-bottom: 48px;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.7s forwards;
-    }
-
-    .section-head h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
-      font-size: 13px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: var(--steel);
-    }
-
-    .section-head::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
     /* ── PROJECT CARD ── */
     .project-card {
       display: grid;
@@ -506,18 +481,9 @@
 
     <!-- PROJECTS -->
     <section class="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-      </div>
-
-    <!-- PROJECTS -->
-    <section class="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-      </div>
 
       <!-- NMS GUIDE CARD — full width -->
-      <a class="project-card" href="nms.html">
+      <a class="project-card" href="/NMS-guide-tool/">
         <div class="card-visual">
           <div class="card-visual-inner">
             <canvas class="nms-canvas" id="nmsCanvas"></canvas>
@@ -552,7 +518,7 @@
       <div class="small-cards">
 
         <!-- ONESPAN -->
-        <a class="small-card" href="https://github.com/countbrackmoor/OneSpan--Span-Labeling-Tool" target="_blank" rel="noopener">
+        <a class="small-card" href="/OneSpan--Span-Labeling-Tool/" target="_blank" rel="noopener">
           <div class="sc-visual sc-onespan">
             <div class="sc-glyph">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -573,14 +539,14 @@
             <div class="sc-title">OneSpan</div>
             <p class="sc-desc">A span labeling annotation server for NLP datasets. Single-file UI, persistent JSON backend, atomic writes. Designed for Kubeflow / JupyterLab environments.</p>
             <div class="card-cta-bar">
-              <span class="card-cta-text">View on GitHub</span>
+              <span class="card-cta-text">Open Tool</span>
               <span class="card-arrow">↗</span>
             </div>
           </div>
         </a>
 
         <!-- OFFICE TRACKER -->
-        <a class="small-card" href="https://github.com/countbrackmoor/office-tracker" target="_blank" rel="noopener">
+        <a class="small-card" href="/office-tracker/" target="_blank" rel="noopener">
           <div class="sc-visual sc-office">
             <div class="sc-glyph">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -610,7 +576,7 @@
             <div class="sc-title">Office Tracker</div>
             <p class="sc-desc">A self-contained hybrid work attendance tracker. Year-at-a-glance calendar, overlapping requirement periods, color-coded progress bars. One HTML file, no accounts, no data leaves your browser.</p>
             <div class="card-cta-bar">
-              <span class="card-cta-text">View on GitHub</span>
+              <span class="card-cta-text">Open Tracker</span>
               <span class="card-arrow">↗</span>
             </div>
           </div>
