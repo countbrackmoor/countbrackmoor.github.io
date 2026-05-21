@@ -3,6 +3,8 @@
 // Injects a slim "← gorgon.live" bar at the top of the page.
 
 (function () {
+  const BAR_HEIGHT = 36;
+
   const bar = document.createElement('div');
   bar.id = 'gorgon-nav';
   bar.style.cssText = [
@@ -11,7 +13,7 @@
     'left: 0',
     'right: 0',
     'z-index: 9999',
-    'height: 36px',
+    'height: ' + BAR_HEIGHT + 'px',
     'background: rgba(10,10,10,0.92)',
     'backdrop-filter: blur(8px)',
     '-webkit-backdrop-filter: blur(8px)',
@@ -51,7 +53,38 @@
   link.addEventListener('mouseenter', () => link.style.color = 'rgba(255,255,255,0.75)');
   link.addEventListener('mouseleave', () => link.style.color = 'rgba(255,255,255,0.35)');
 
-  // Insert bar and push page content down
+  // Insert bar at top of body
   document.body.insertBefore(bar, document.body.firstChild);
-  document.body.style.paddingTop = (parseInt(document.body.style.paddingTop || '0') + 36) + 'px';
+
+  // Push any existing fixed nav bars down (e.g. NMS hub-nav)
+  // and add padding to the body so content isn't hidden behind both bars
+  function nudgeFixed() {
+    // Any element with position:fixed and top:0 that isn't our bar
+    const candidates = document.querySelectorAll(
+      '.hub-nav, nav[style*="fixed"], header[style*="fixed"], [class*="nav"], [class*="header"]'
+    );
+    candidates.forEach(function(el) {
+      if (el === bar) return;
+      const computed = window.getComputedStyle(el);
+      if (computed.position === 'fixed') {
+        const currentTop = parseInt(computed.top) || 0;
+        if (currentTop < BAR_HEIGHT) {
+          el.style.top = (currentTop + BAR_HEIGHT) + 'px';
+        }
+      }
+    });
+
+    // Also bump body padding-top so page content clears both bars
+    const currentPad = parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
+    if (currentPad < BAR_HEIGHT) {
+      document.body.style.paddingTop = (currentPad + BAR_HEIGHT) + 'px';
+    }
+  }
+
+  // Run after DOM is ready (handles cases where nav renders after script)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', nudgeFixed);
+  } else {
+    nudgeFixed();
+  }
 })();
