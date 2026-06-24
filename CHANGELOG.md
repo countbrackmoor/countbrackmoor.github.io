@@ -7,6 +7,19 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## 2026-06-23 — The System card added
+
+### Added
+- The System card in the Productivity Apps section (positioned first), with cyan radial gradient and custom status-window SVG glyph (clipped-corner frame, three descending HP/MP/XP bars, level indicator)
+- Matching `.sc-system` CSS (cyan `rgba(95,212,255,0.08)` radial gradient)
+- Inline cyan override on the card's `.sc-visual-label` to match the tool's signature accent
+
+### Notes
+- Productivity Apps section now contains 5 cards in a 2-column grid; orphan card on the third row is acceptable for now. Reorder or compact-mode is a future consideration if a 6th tool joins.
+- The System lives at `countbrackmoor/theSystem` and routes to `/theSystem/` on gorgon.live.
+
+---
+
 ## 2026-06-21 — Changelog established
 
 ### Added

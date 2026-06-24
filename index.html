@@ -440,6 +440,7 @@
     .sc-office     { background: radial-gradient(ellipse at center, rgba(90,170,106,0.06) 0%, transparent 70%); }
     .sc-rank       { background: radial-gradient(ellipse at center, rgba(200,247,42,0.06) 0%, transparent 70%); }
     .sc-playlistur { background: radial-gradient(ellipse at center, rgba(230,48,48,0.07) 0%, transparent 70%); }
+    .sc-system     { background: radial-gradient(ellipse at center, rgba(95,212,255,0.08) 0%, transparent 70%); }
 
     .sc-glyph { width: 80px; height: 80px; opacity: 0.9; }
 
@@ -559,6 +560,44 @@
       </div>
 
       <div class="small-cards">
+
+        <!-- THE SYSTEM -->
+        <a class="small-card" href="/theSystem/" target="_blank" rel="noopener">
+          <div class="sc-visual sc-system">
+            <div class="sc-glyph">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Status window frame with clipped corners -->
+                <path d="M16 14 L66 14 L66 60 L62 64 L14 64 L14 18 Z"
+                      stroke="#5fd4ff" stroke-width="1.5" fill="rgba(95,212,255,0.06)" stroke-linejoin="miter"/>
+                <!-- Top label bar -->
+                <line x1="16" y1="22" x2="64" y2="22" stroke="rgba(95,212,255,0.45)" stroke-width="0.8"/>
+                <!-- Three status bars (HP/MP/XP), descending fill -->
+                <rect x="20" y="28" width="40" height="4" fill="none" stroke="rgba(95,212,255,0.55)" stroke-width="0.8"/>
+                <rect x="20" y="28" width="32" height="4" fill="#5fd4ff"/>
+                <rect x="20" y="36" width="40" height="4" fill="none" stroke="rgba(95,212,255,0.4)" stroke-width="0.8"/>
+                <rect x="20" y="36" width="22" height="4" fill="rgba(95,212,255,0.7)"/>
+                <rect x="20" y="44" width="40" height="4" fill="none" stroke="rgba(95,212,255,0.3)" stroke-width="0.8"/>
+                <rect x="20" y="44" width="12" height="4" fill="rgba(95,212,255,0.5)"/>
+                <!-- Level indicator -->
+                <text x="20" y="58" font-size="7" fill="#5fd4ff" font-family="monospace" font-weight="bold">LV</text>
+                <text x="32" y="58" font-size="9" fill="#5fd4ff" font-family="monospace" font-weight="bold">07</text>
+                <!-- Glow accent dot -->
+                <circle cx="60" cy="56" r="2" fill="#5fd4ff"/>
+                <circle cx="60" cy="56" r="4" fill="none" stroke="rgba(95,212,255,0.4)" stroke-width="0.8"/>
+              </svg>
+            </div>
+            <span class="sc-visual-label" style="color: rgba(95,212,255,0.5);">// Solo Leveling</span>
+          </div>
+          <div class="sc-content">
+            <div class="sc-tag">Pure HTML · LocalStorage</div>
+            <div class="sc-title">The System</div>
+            <p class="sc-desc">A Solo Leveling–inspired self-improvement tracker. Daily Quests, five-stat progression, real penalties for misses. The fiction is the retention mechanic. Import / export your save as JSON.</p>
+            <div class="card-cta-bar">
+              <span class="card-cta-text">Open System</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </div>
+        </a>
 
         <!-- RANK -->
         <a class="small-card" href="/rank/" target="_blank" rel="noopener">
