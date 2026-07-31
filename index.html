@@ -146,6 +146,17 @@
       text-align: center;
     }
 
+    .wip-caption {
+      display: block;
+      margin-top: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 8px;
+      letter-spacing: 1.5px;
+      color: rgba(232,230,220,0.22);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
     /* ── PROJECTS SECTION ── */
     .projects {
       padding: 80px 0 80px;
@@ -441,6 +452,7 @@
     .sc-rank       { background: radial-gradient(ellipse at center, rgba(200,247,42,0.06) 0%, transparent 70%); }
     .sc-playlistur { background: radial-gradient(ellipse at center, rgba(230,48,48,0.07) 0%, transparent 70%); }
     .sc-system     { background: radial-gradient(ellipse at center, rgba(95,212,255,0.08) 0%, transparent 70%); }
+    .sc-pokemon    { background: radial-gradient(ellipse at center, rgba(240,160,48,0.07) 0%, transparent 70%); }
 
     .sc-glyph { width: 80px; height: 80px; opacity: 0.9; }
 
@@ -546,6 +558,7 @@
         <div class="hero-image">
           <img src="medusa.png" alt="Medusa by Caravaggio, c. 1597 — Uffizi Gallery, Florence">
           <span class="medusa-caption">Caravaggio · Medusa · c. 1597 · Uffizi, Florence</span>
+          <span class="wip-caption">These tools are a work in progress — use at your discretion</span>
         </div>
       </div>
     </header>
@@ -721,6 +734,38 @@
             <p class="sc-desc">Paste a list of YouTube URLs and generate a shareable queue link in one click. No login required. Includes step-by-step instructions for saving as a permanent YouTube playlist.</p>
             <div class="card-cta-bar">
               <span class="card-cta-text">Open Playlistur</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- TEAM BUILDER -->
+        <a class="small-card" href="/pokemon-team-builder/" target="_blank" rel="noopener">
+          <div class="sc-visual sc-pokemon">
+            <div class="sc-glyph">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Poké Ball outline -->
+                <circle cx="40" cy="40" r="26" stroke="#f0a030" stroke-width="1.5" fill="rgba(240,160,48,0.05)"/>
+                <!-- Top half fill -->
+                <path d="M14 40 A26 26 0 0 1 66 40 Z" fill="rgba(240,160,48,0.1)" stroke="none"/>
+                <!-- Equator band -->
+                <line x1="14" y1="40" x2="66" y2="40" stroke="#f0a030" stroke-width="1.5"/>
+                <!-- Center hinge -->
+                <circle cx="40" cy="40" r="8" fill="rgba(11,11,11,0.6)" stroke="#f0a030" stroke-width="1.5"/>
+                <circle cx="40" cy="40" r="3.5" fill="none" stroke="rgba(240,160,48,0.6)" stroke-width="1"/>
+                <!-- Type-coverage arc ticks -->
+                <path d="M40 14 A26 26 0 0 1 61.2 24.5" stroke="rgba(240,160,48,0.35)" stroke-width="1" fill="none"/>
+                <path d="M18.8 55.5 A26 26 0 0 1 40 66" stroke="rgba(240,160,48,0.35)" stroke-width="1" fill="none"/>
+              </svg>
+            </div>
+            <span class="sc-visual-label">// Shield &amp; Scarlet</span>
+          </div>
+          <div class="sc-content">
+            <div class="sc-tag">React · Client-Side Only</div>
+            <div class="sc-title">Team Builder</div>
+            <p class="sc-desc">Type coverage, gym/E4 matchup analysis, and gap-based team suggestions for Pokémon Shield and Scarlet. Swap games without losing your team — unavailable picks are flagged, not cleared.</p>
+            <div class="card-cta-bar">
+              <span class="card-cta-text">Open Team Builder</span>
               <span class="card-arrow">↗</span>
             </div>
           </div>
