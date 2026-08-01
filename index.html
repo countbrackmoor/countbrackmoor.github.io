@@ -403,6 +403,53 @@
       color: rgba(160, 90, 230, 0.65);
     }
 
+    /* ── POKÉTEAMER CARD ── */
+    .pt-visual {
+      background: #180808;
+    }
+    .pt-visual .card-visual-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pt-scene {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    .pt-svg {
+      width: 200px;
+      height: 200px;
+    }
+    .pt-ring {
+      transform-origin: 100px 100px;
+      animation: pt-spin 40s linear infinite;
+    }
+    @keyframes pt-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    .pt-ball {
+      transform-origin: 100px 100px;
+      animation: pt-pulse 5s ease-in-out infinite;
+    }
+    @keyframes pt-pulse {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.04); }
+    }
+    .pt-visual .card-visual-label {
+      color: rgba(224, 90, 78, 0.6);
+    }
+    .pt-card-game {
+      color: rgba(230, 108, 96, 0.85);
+    }
+    .pt-pills .pill.active {
+      border-color: rgba(224, 90, 78, 0.35);
+      color: rgba(224, 90, 78, 0.75);
+    }
+
     /* ── SMALL CARDS GRID ── */
     .small-cards {
       display: grid;
@@ -452,7 +499,6 @@
     .sc-rank       { background: radial-gradient(ellipse at center, rgba(200,247,42,0.06) 0%, transparent 70%); }
     .sc-playlistur { background: radial-gradient(ellipse at center, rgba(230,48,48,0.07) 0%, transparent 70%); }
     .sc-system     { background: radial-gradient(ellipse at center, rgba(95,212,255,0.08) 0%, transparent 70%); }
-    .sc-pokemon    { background: radial-gradient(ellipse at center, rgba(240,160,48,0.07) 0%, transparent 70%); }
 
     .sc-glyph { width: 80px; height: 80px; opacity: 0.9; }
 
@@ -739,38 +785,6 @@
           </div>
         </a>
 
-        <!-- TEAM BUILDER -->
-        <a class="small-card" href="/pokemon-team-builder/" target="_blank" rel="noopener">
-          <div class="sc-visual sc-pokemon">
-            <div class="sc-glyph">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Poké Ball outline -->
-                <circle cx="40" cy="40" r="26" stroke="#f0a030" stroke-width="1.5" fill="rgba(240,160,48,0.05)"/>
-                <!-- Top half fill -->
-                <path d="M14 40 A26 26 0 0 1 66 40 Z" fill="rgba(240,160,48,0.1)" stroke="none"/>
-                <!-- Equator band -->
-                <line x1="14" y1="40" x2="66" y2="40" stroke="#f0a030" stroke-width="1.5"/>
-                <!-- Center hinge -->
-                <circle cx="40" cy="40" r="8" fill="rgba(11,11,11,0.6)" stroke="#f0a030" stroke-width="1.5"/>
-                <circle cx="40" cy="40" r="3.5" fill="none" stroke="rgba(240,160,48,0.6)" stroke-width="1"/>
-                <!-- Type-coverage arc ticks -->
-                <path d="M40 14 A26 26 0 0 1 61.2 24.5" stroke="rgba(240,160,48,0.35)" stroke-width="1" fill="none"/>
-                <path d="M18.8 55.5 A26 26 0 0 1 40 66" stroke="rgba(240,160,48,0.35)" stroke-width="1" fill="none"/>
-              </svg>
-            </div>
-            <span class="sc-visual-label">// Shield &amp; Scarlet</span>
-          </div>
-          <div class="sc-content">
-            <div class="sc-tag">React · Client-Side Only</div>
-            <div class="sc-title">Team Builder</div>
-            <p class="sc-desc">Type coverage, gym/E4 matchup analysis, and gap-based team suggestions for Pokémon Shield and Scarlet. Swap games without losing your team — unavailable picks are flagged, not cleared.</p>
-            <div class="card-cta-bar">
-              <span class="card-cta-text">Open Team Builder</span>
-              <span class="card-arrow">↗</span>
-            </div>
-          </div>
-        </a>
-
       </div><!-- /small-cards -->
 
       <!-- ─────── GAME APPS ─────── -->
@@ -882,6 +896,64 @@
             </div>
             <div class="card-cta-bar">
               <span class="card-cta-text">Open Toolkit</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- POKÉTEAMER CARD -->
+        <a class="project-card" href="/pokemon-team-builder/" target="_blank" rel="noopener">
+          <div class="card-visual pt-visual">
+            <div class="card-visual-inner">
+              <div class="pt-scene">
+                <svg class="pt-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Type-coverage ring -->
+                  <g class="pt-ring">
+                    <circle cx="100.00" cy="22.00"  r="4" fill="#f08030" opacity="0.85"/>
+                    <circle cx="139.00" cy="32.45"  r="4" fill="#6890f0" opacity="0.85"/>
+                    <circle cx="167.55" cy="61.00"  r="4" fill="#78c850" opacity="0.85"/>
+                    <circle cx="178.00" cy="100.00" r="4" fill="#f8d030" opacity="0.85"/>
+                    <circle cx="167.55" cy="139.00" r="4" fill="#98d8d8" opacity="0.85"/>
+                    <circle cx="139.00" cy="167.55" r="4" fill="#c03028" opacity="0.85"/>
+                    <circle cx="100.00" cy="178.00" r="4" fill="#a040a0" opacity="0.85"/>
+                    <circle cx="61.00"  cy="167.55" r="4" fill="#e0c068" opacity="0.85"/>
+                    <circle cx="32.45"  cy="139.00" r="4" fill="#f85888" opacity="0.85"/>
+                    <circle cx="22.00"  cy="100.00" r="4" fill="#b8a038" opacity="0.85"/>
+                    <circle cx="32.45"  cy="61.00"  r="4" fill="#7038f8" opacity="0.85"/>
+                    <circle cx="61.00"  cy="32.45"  r="4" fill="#705848" opacity="0.85"/>
+                  </g>
+                  <!-- Poké Ball -->
+                  <g class="pt-ball">
+                    <circle cx="100" cy="100" r="55" fill="#180808" stroke="#111" stroke-width="2"/>
+                    <path d="M45 100 A55 55 0 0 1 155 100 Z" fill="#dc3a3a"/>
+                    <path d="M45 100 A55 55 0 0 0 155 100 Z" fill="#e8e6dc"/>
+                    <rect x="45" y="97" width="110" height="6" fill="#111"/>
+                    <circle cx="100" cy="100" r="14" fill="#e8e6dc" stroke="#111" stroke-width="2"/>
+                    <circle cx="100" cy="100" r="7" fill="#180808" stroke="#111" stroke-width="1.5"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <span class="card-visual-label">// Shield &amp; Scarlet</span>
+          </div>
+          <div class="card-content">
+            <div class="card-tag">Fan Tool · React, Client-Side Only</div>
+            <div class="card-title">
+              <span class="card-game pt-card-game">Pokémon Shield &amp; Scarlet</span>
+              Poké<br><em>Teamer</em>
+            </div>
+            <p class="card-desc">
+              Type coverage, gym/E4/Champion matchup analysis, and gap-based team suggestions for Pokémon Shield and Scarlet. Swap games without losing your team — unavailable picks are flagged, not cleared. Plain-English summaries on every tab.
+            </p>
+            <div class="card-pills pt-pills">
+              <span class="pill active">Type Coverage</span>
+              <span class="pill active">Matchup Analysis</span>
+              <span class="pill active">Team Suggestions</span>
+              <span class="pill">949 Pokémon</span>
+              <span class="pill">Shield &amp; Scarlet</span>
+            </div>
+            <div class="card-cta-bar">
+              <span class="card-cta-text">Open PokéTeamer</span>
               <span class="card-arrow">↗</span>
             </div>
           </div>
