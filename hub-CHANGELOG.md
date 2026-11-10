@@ -15,6 +15,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Hub README row for `palworld-planner`
 
 ### Changed
+- Palworld card visual: replaced the four-base node diagram with an original sleepy-creature SVG (pink body, amber head frills, glowing lantern tail; unique `pb-` gradient and clip IDs, magenta accent kept)
 - `SUMMARY.md`: eight to nine modules. Added Page 11 (Palworld Base Planner), a ninth row in the module table, a contents entry, and updated the game-app count (three to four)
 
 ### Noted

@@ -984,24 +984,49 @@
           <div class="card-visual pb-visual">
             <div class="card-visual-inner">
               <div class="pb-scene">
-                <svg class="pb-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g stroke="rgba(224,112,168,0.45)" stroke-width="1.2" stroke-dasharray="4 3">
-                    <line x1="52" y1="52" x2="148" y2="52"/>
-                    <line x1="52" y1="52" x2="52" y2="148"/>
-                    <line x1="148" y1="52" x2="148" y2="148"/>
-                    <line x1="52" y1="148" x2="148" y2="148"/>
+                <svg class="pb-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A round, sleepy pink creature with amber head frills and a glowing lantern tail">
+                  <defs>
+                    <clipPath id="pb-body-clip"><path d="M58 120C50 80 78 58 104 58C136 58 156 86 150 122C148 148 128 162 102 162C76 162 60 148 58 120Z"/></clipPath>
+                    <radialGradient id="pb-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd27a" stop-opacity=".55"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+                  </defs>
+                  <ellipse cx="100" cy="171" rx="54" ry="8" fill="#000" opacity=".35"/>
+                  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M148 150C176 152 186 124 172 110" stroke="#2a0f1e" stroke-width="14"/>
+                    <path d="M148 150C176 152 186 124 172 110" stroke="#e070a8" stroke-width="8"/>
+                    <circle cx="170" cy="106" r="18" fill="url(#pb-glow)"/>
+                    <circle cx="170" cy="106" r="8.5" fill="#ffd27a" stroke="#2a0f1e" stroke-width="3.5"/>
+                    <path d="M166 103Q168 100 171 101" stroke="#fff" stroke-width="2" opacity=".8"/>
+                    <g stroke="#2a0f1e" stroke-width="3.5">
+                      <path d="M86 64C76 42 90 31 99 39C103 49 95 59 86 64Z" fill="#e39a3b"/>
+                      <path d="M120 62C124 38 142 40 146 52C146 60 132 64 120 62Z" fill="#e39a3b"/>
+                      <path d="M103 58C96 30 116 21 123 33C128 46 114 56 103 58Z" fill="#f2b45a"/>
+                      <ellipse cx="80" cy="161" rx="15" ry="9.5" fill="#b84f86"/>
+                      <ellipse cx="124" cy="161" rx="15" ry="9.5" fill="#b84f86"/>
+                    </g>
+                    <path d="M101 56C104 44 108 38 113 33" stroke="#fff" stroke-width="2" opacity=".35"/>
+                    <path d="M58 120C50 80 78 58 104 58C136 58 156 86 150 122C148 148 128 162 102 162C76 162 60 148 58 120Z" fill="#e070a8"/>
+                    <g clip-path="url(#pb-body-clip)">
+                      <ellipse cx="120" cy="150" rx="62" ry="52" fill="#b84f86"/>
+                      <ellipse cx="92" cy="108" rx="54" ry="50" fill="#e070a8"/>
+                      <ellipse cx="102" cy="136" rx="28" ry="24" fill="#ffd9e8"/>
+                      <path d="M92 130Q102 136 112 130M94 141Q102 146 110 141" stroke="#f0a9c6" stroke-width="2.5" opacity=".8"/>
+                    </g>
+                    <path d="M58 120C50 80 78 58 104 58C136 58 156 86 150 122C148 148 128 162 102 162C76 162 60 148 58 120Z" stroke="#2a0f1e" stroke-width="4"/>
+                    <path d="M71 94C73 82 82 74 93 71" stroke="#fff" stroke-width="4" opacity=".35"/>
+                    <g stroke="#2a0f1e" stroke-width="3.5">
+                      <ellipse cx="56" cy="128" rx="7.5" ry="11.5" transform="rotate(-18 56 128)" fill="#b84f86"/>
+                      <ellipse cx="149" cy="128" rx="7.5" ry="11.5" transform="rotate(18 149 128)" fill="#b84f86"/>
+                      <path d="M79 97Q87 104 95 97" fill="none"/>
+                      <path d="M113 97Q121 104 129 97" fill="none"/>
+                      <path d="M99 110Q102.5 114 106 110Q109.5 114 113 110" fill="none" stroke-width="3"/>
+                    </g>
+                    <ellipse cx="74" cy="110" rx="6.5" ry="4" fill="#ff9cc4" opacity=".75"/>
+                    <ellipse cx="136" cy="110" rx="6.5" ry="4" fill="#ff9cc4" opacity=".75"/>
                   </g>
-                  <g stroke-width="1.5">
-                    <circle cx="52" cy="52" r="20" fill="rgba(227,154,59,0.12)" stroke="#e39a3b"/>
-                    <circle cx="148" cy="52" r="20" fill="rgba(224,112,168,0.14)" stroke="#e070a8"/>
-                    <circle cx="52" cy="148" r="20" fill="rgba(92,192,139,0.12)" stroke="#5cc08b"/>
-                    <circle cx="148" cy="148" r="20" fill="rgba(107,177,222,0.12)" stroke="#6bb1de"/>
-                  </g>
-                  <g font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">
-                    <text x="52" y="57" fill="#e39a3b">1</text>
-                    <text x="148" y="57" fill="#e070a8">2</text>
-                    <text x="52" y="153" fill="#5cc08b">3</text>
-                    <text x="148" y="153" fill="#6bb1de">4</text>
+                  <g font-family="monospace" font-weight="bold" fill="#e070a8" opacity=".85">
+                    <text x="150" y="38" font-size="13">z</text>
+                    <text x="162" y="26" font-size="10">z</text>
+                    <text x="172" y="17" font-size="8">z</text>
                   </g>
                 </svg>
               </div>
