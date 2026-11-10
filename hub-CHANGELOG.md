@@ -7,6 +7,15 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## 2026-11-10 — Palworld Base Planner card
+
+### Added
+- Palworld Base Planner card in the Game Apps stack, after PokéTeamer (magenta `rgba(224,112,168)` accent, four linked base nodes SVG)
+- Matching `.pb-*` CSS
+- Hub README row for `palworld-planner`
+
+---
+
 ## 2026-06-20 — Sectioned hub + Horrified card
 
 ### Added
