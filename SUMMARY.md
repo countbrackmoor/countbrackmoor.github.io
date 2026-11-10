@@ -1,18 +1,18 @@
 # SUMMARY — gorgon.live
 
-*Compiled 4 August 2026. Sources: hub `index.html` and `CHANGELOG.md`, per-repo READMEs, and the module files themselves.*
+*Compiled 4 August 2026; updated 10 November 2026 to add the ninth module. Sources: hub `index.html` and `CHANGELOG.md`, per-repo READMEs, and the module files themselves.*
 
 ---
 
 ## Page 1 — gorgon.live
 
-**Eight tools, one static host.**
+**Nine tools, one static host.**
 
-gorgon.live is a personal landing page and project hub served from GitHub Pages, fronted by Cloudflare. It collects eight self-contained web tools — five productivity, three game — each living in its own repo and deployed independently at `gorgon.live/<repo>/`.
+gorgon.live is a personal landing page and project hub served from GitHub Pages, fronted by Cloudflare. It collects nine self-contained web tools — five productivity, four game — each living in its own repo and deployed independently at `gorgon.live/<repo>/`.
 
 The through-line is a deliberate constraint: almost everything is a single HTML file with no build step, no accounts, and no backend. State, where it exists, lives in `localStorage`; data leaves the browser only when the user exports it. The hub itself is one `index.html` plus a shared `nav.js` that sub-tools load as `../nav.js` to get a slim "← gorgon.live" bar — and which silently does nothing when a file is opened locally.
 
-### The eight modules
+### The nine modules
 
 | Module | Route | What it is |
 | --- | --- | --- |
@@ -24,6 +24,7 @@ The through-line is a deliberate constraint: almost everything is a single HTML 
 | Traveller's Codex | `/NMS-guide-tool/` | No Man's Sky field manuals, Beacon & Voyagers era |
 | Horrified Toolkit | `/horrifiedTool/` | New-player reference for Horrified: D&D |
 | PokéTeamer | `/pokemon-team-builder/` | Type coverage & matchup analysis, Shield/Scarlet |
+| Palworld Base Planner | `/palworld-planner/` | Adjustable base-layout planner for Palworld 1.0.x |
 
 ### At a glance
 
@@ -42,7 +43,7 @@ Page order follows the hub's own layout: productivity apps first in the two-colu
 
 **Front matter**
 
-1. [gorgon.live](#page-1--gorgonlive) — the hub, the constraint, and the eight modules at a glance
+1. [gorgon.live](#page-1--gorgonlive) — the hub, the constraint, and the nine modules at a glance
 2. Contents — this page
 
 **Productivity apps**
@@ -58,6 +59,7 @@ Page order follows the hub's own layout: productivity apps first in the two-colu
 8. [No Man's Sky — Traveller's Codex](#page-8--no-mans-sky--travellers-codex) — long-form field manuals, each with its own atmosphere
 9. [Horrified D&D Toolkit](#page-9--horrified-dd-toolkit) — eleven modules and a pace tracker that survives a refresh
 10. [PokéTeamer](#page-10--pokéteamer) — coverage, matchups, and gap-filling suggestions
+11. [Palworld Base Planner](#page-11--palworld-base-planner) — base roles, unlock ladder, carry list and material totals from four settings
 
 ---
 
@@ -279,3 +281,35 @@ Pick up to six Pokémon and PokéTeamer reports both sides of the type chart: de
 | **Naming** | Repo and URL stay `pokemon-team-builder` for link stability; only the display name is PokéTeamer. |
 
 > The pinned CDN versions are scar tissue: an unpinned Babel Standalone URL once rolled to a new major with a breaking default and took the whole page down.
+
+---
+
+## Page 11 — Palworld Base Planner
+
+*Game · Module 9 · `gorgon.live/palworld-planner/` · Palworld 1.0.x, data checked 9–10 November 2026*
+
+**Set your level, base count, worker cap and World Tree status; the base layout, unlock ladder, carry list, build checklist and material totals follow.**
+
+The planner exists for the late-game question of how to spread a production chain across a limited number of bases. A setup panel holds the inputs, and everything below it recomputes: which roles each base takes, which structures are still locked at your level, which items you have to carry by hand between bases, and what the whole build costs in materials.
+
+### What it does
+
+- **Setup panel** — level (quick-set 20 / 45 / 65 / 78), bases 1–4, worker cap 15–50, World Tree unlocked, wiping existing bases, and whether to build the Ancient Furnace.
+- **Base layouts** — four bases split into ore, ancient, breeding and oil. Fewer bases merge roles: three folds oil into ancient, two drops oil, one holds everything. Worker gauges show when a merged base runs over your cap.
+- **Unlock ladder** — 11 structures with levels, plus five whose level couldn't be verified.
+- **Paloxite chain** — a diagram of the production chain.
+- **Carry manifest** — only the hand-carried moves your chosen layout needs.
+- **Build-order checklist** — locked steps are greyed out; ticks persist.
+- **Totals and recipes** — a material calculator (a planning figure that can include locked structures) and a recipes table.
+- **Confidence marks** — ● two or more sources or game data, ◐ one source or sources disagree, ○ unverified. A closing "What I couldn't confirm" section lists what to check in-game.
+
+| | |
+| --- | --- |
+| **Stack** | Single HTML file · vanilla JS · no build step · Google Fonts is the only external request |
+| **Accent** | Magenta `rgba(224, 112, 168)` — the only magenta on the hub |
+| **Persistence** | `localStorage` keys `palworld-base-planner-v2-settings` and `palworld-base-planner-v2-checks`; nothing leaves the browser |
+| **Hub bar** | Loads `../nav.js` and offsets its own sticky jump bar by the bar's height; does nothing if the script is absent |
+| **Repo** | `countbrackmoor/palworld-planner` |
+| **Standing** | Unofficial fan tool — not affiliated with or endorsed by Pocketpair |
+
+> Worker counts and the one-, two- and three-base layouts are estimates, not sourced. Several unlock levels are disputed between guides, and Palworld changes often — treat the checked-against version (v1.0.5 tables) as a snapshot.

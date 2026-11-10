@@ -14,6 +14,12 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Matching `.pb-*` CSS
 - Hub README row for `palworld-planner`
 
+### Changed
+- `SUMMARY.md`: eight to nine modules. Added Page 11 (Palworld Base Planner), a ninth row in the module table, a contents entry, and updated the game-app count (three to four)
+
+### Noted
+- `SUMMARY — gorgon.live.md` was not updated. It is a saved browser capture of a claude.ai artifact page (HTML shell and CSS, with an iframe pointing at a `_files/` folder that is not in the repo) and contains no module text
+
 ---
 
 ## 2026-06-20 — Sectioned hub + Horrified card
