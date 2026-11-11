@@ -7,6 +7,13 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## 2026-11-11 — Palworld planner accuracy pass
+
+### Changed
+- `SUMMARY.md` Page 11: unlock ladder description (16 entries, Lv 74 Paloxite gating), check dates, and a note on the accuracy fixes. The tool changes themselves are logged in `palworld-planner/CHANGELOG.md`.
+
+---
+
 ## 2026-11-10 — Palworld Base Planner card
 
 ### Added

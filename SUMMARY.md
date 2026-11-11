@@ -286,7 +286,7 @@ Pick up to six Pokémon and PokéTeamer reports both sides of the type chart: de
 
 ## Page 11 — Palworld Base Planner
 
-*Game · Module 9 · `gorgon.live/palworld-planner/` · Palworld 1.0.x, data checked 9–10 November 2026*
+*Game · Module 9 · `gorgon.live/palworld-planner/` · Palworld 1.0.x, data checked 9–11 November 2026*
 
 **Set your level, base count, worker cap and World Tree status; the base layout, unlock ladder, carry list, build checklist and material totals follow.**
 
@@ -296,7 +296,7 @@ The planner exists for the late-game question of how to spread a production chai
 
 - **Setup panel** — level (quick-set 20 / 45 / 65 / 78), bases 1–4, worker cap 15–50, World Tree unlocked, wiping existing bases, and whether to build the Ancient Furnace.
 - **Base layouts** — four bases split into ore, ancient, breeding and oil. Fewer bases merge roles: three folds oil into ancient, two drops oil, one holds everything. Worker gauges show when a merged base runs over your cap.
-- **Unlock ladder** — 11 structures with levels, plus five whose level couldn't be verified.
+- **Unlock ladder** — 16 entries with levels (structures plus the Paloxite and Coralum Ingot recipes and the Plasma Multicutter), plus three structures whose level couldn't be verified. The Paloxite chain gates on the Lv 74 ingot recipe.
 - **Paloxite chain** — a diagram of the production chain.
 - **Carry manifest** — only the hand-carried moves your chosen layout needs.
 - **Build-order checklist** — locked steps are greyed out; ticks persist.
@@ -312,4 +312,4 @@ The planner exists for the late-game question of how to spread a production chai
 | **Repo** | `countbrackmoor/palworld-planner` |
 | **Standing** | Unofficial fan tool — not affiliated with or endorsed by Pocketpair |
 
-> Worker counts and the one-, two- and three-base layouts are estimates, not sourced. Several unlock levels are disputed between guides, and Palworld changes often — treat the checked-against version (v1.0.5 tables) as a snapshot.
+> Worker counts and the one-, two- and three-base layouts are estimates, not sourced. Several unlock levels are disputed between guides, and Palworld changes often, so treat the data as a November 2026 snapshot. An 11 November accuracy pass fixed the World Tree coordinate (it's in the northwest, at a negative X), four unlock levels and the Paloxite gating; the repo's `CHANGELOG.md` has the detail.
