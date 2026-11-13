@@ -51,7 +51,7 @@ To add it to a project, place these lines immediately before `</body>`:
 |---|---|---|
 | [NMS-guide-tool](https://github.com/countbrackmoor/NMS-guide-tool) | [gorgon.live/NMS-guide-tool/](https://gorgon.live/NMS-guide-tool/) | No Man's Sky Traveller's Codex — seven-module fan reference (Beacon/Voyagers era) |
 | [horrifiedTool](https://github.com/countbrackmoor/horrifiedTool) | [gorgon.live/horrifiedTool/](https://gorgon.live/horrifiedTool/) | New player toolkit for Horrified: D&D — 11 modules, persistent pace tracker |
-| [palworld-planner](https://github.com/countbrackmoor/palworld-planner) | [gorgon.live/palworld-planner/](https://gorgon.live/palworld-planner/) | Adjustable Palworld 1.0 base planner — roles, unlocks, carry list, material totals |
+| [palworld-planner](https://github.com/countbrackmoor/palworld-planner) | [gorgon.live/palworld-planner/](https://gorgon.live/palworld-planner/) | Adjustable Palworld 1.0 base planner — base roles, ranch roster, Guild Chest flows, material totals |
 
 ---
 
